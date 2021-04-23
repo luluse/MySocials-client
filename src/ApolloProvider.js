@@ -5,7 +5,7 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import { setContext } from 'apollo-link-context';
 
 const httpLink = new HttpLink({
-  uri: 'http://localhost:5000'
+  uri: 'https://stark-peak-97627.herokuapp.com/'
 });
 
 const authLink = setContext(() => {
