@@ -22,6 +22,7 @@ function MenuBar() {
     </Menu>
   ) : (
     <Menu pointing secondary size="massive" color="violet">
+    
       <Menu.Item
         name="home"
         active={activeItem === 'home'}
@@ -29,7 +30,6 @@ function MenuBar() {
         as={Link}
         to="/"
       />
-
       <Menu.Menu position="right">
         <Menu.Item
           name="login"
