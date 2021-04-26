@@ -59,10 +59,9 @@ function SinglePost(props) {
       <Grid>
         <Grid.Row>
           <Grid.Column width={2}>
-            <Image
-              src="https://react.semantic-ui.com/images/avatar/large/molly.png"
-              size="small"
-              float="right"
+            <Image className="ui circular mini right floated image"
+              src="https://i.ibb.co/M2bpZgk/avatar-default.jpg"
+
             />
           </Grid.Column>
           <Grid.Column width={10}>
@@ -81,10 +80,10 @@ function SinglePost(props) {
                   labelPosition="right"
                   onClick={() => console.log('Comment on post')}
                 >
-                  <Button basic color="blue">
+                  <Button basic color="violet">
                     <Icon name="comments" />
                   </Button>
-                  <Label basic color="blue" pointing="left">
+                  <Label basic color="violet" pointing="left">
                     {commentCount}
                   </Label>
                 </Button>
@@ -110,7 +109,7 @@ function SinglePost(props) {
                       />
                       <button
                         type="submit"
-                        className="ui button teal"
+                        className="ui button violet"
                         disabled={comment.trim() === ''}
                         onClick={submitComment}
                       >
