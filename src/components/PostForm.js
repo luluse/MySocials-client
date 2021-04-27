@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form } from 'semantic-ui-react';
+import { Button, Form, Card } from 'semantic-ui-react';
 import gql from 'graphql-tag';
 import { useMutation } from '@apollo/react-hooks';
 
@@ -51,8 +51,10 @@ function PostForm() {
 
   return (
     <>
+    <Card fluid>
+    <Card.Content>
     <Form onSubmit={onSubmit}>
-      <h2>Create a post:</h2>
+      <h2>Create a post</h2>
       <Form.Field>
         <Form.Input
           placeholder="Hi World!"
@@ -61,7 +63,7 @@ function PostForm() {
           value={values.body}
           error={error ? true : false}
         />
-        <Button type="submit" color="teal">
+        <Button type="submit" color="violet">
           Submit
         </Button>
       </Form.Field>
@@ -73,6 +75,8 @@ function PostForm() {
           </ul>
         </div>
       )}
+      </Card.Content>
+      </Card>
     </>
   );
 }

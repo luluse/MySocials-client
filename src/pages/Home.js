@@ -12,16 +12,17 @@ function Home() {
   const { loading, data: { getPosts: posts } = {} } = useQuery( FETCH_POSTS_QUERY );
 
   return (
-    <Grid columns={3}>
-      <Grid.Row className="page-title">
-        <h1>Recent Posts</h1>
-      </Grid.Row>
-      <Grid.Row>
+    <Grid>
+      <Grid.Row className="page-post" columns={1}>
         {user && (
-          <Grid.Column>
+          <Grid.Column >
             <PostForm />
           </Grid.Column>
-        )}
+        )}</Grid.Row>
+      <Grid.Row className="page-title" columns={1}>
+        <h2>Recent Posts</h2>
+      </Grid.Row>
+        <Grid.Row columns={2}>
         {loading ? (
           <h1>Loading posts..</h1>
         ) : (
