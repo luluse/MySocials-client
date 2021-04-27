@@ -1,3 +1,8 @@
+<p align="center">
+  <img alt="mySocialsLogo" src="./assets/mysocialslogo.png" width="90" />
+</p>
+
+
 # MySocials
 
 MySocials is a social network application using MERN stack technologies. 

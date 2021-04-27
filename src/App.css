@@ -5,6 +5,13 @@
   margin-top: 10px;
 }
 
+.page-post {
+  display: block !important;
+  text-align: left;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
 .form-container {
   width: 400px;
   margin: auto;
